@@ -17,9 +17,9 @@ const Header = () => (
     </LogoContainer>
     <OptionsLinkContainer>
       <OptionsLink to="/">Home</OptionsLink>
-      <OptionsLink to="/portfolio">Portfolio</OptionsLink>
-      <OptionsLink to="/contact">Contact</OptionsLink>
-      <OptionsLink to="/about">About Me</OptionsLink>
+      <OptionsLink to="/Portfolio">Portfolio</OptionsLink>
+      <OptionsLink to="/Contact">Contact</OptionsLink>
+      <OptionsLink to="/AboutMe">About Me</OptionsLink>
     </OptionsLinkContainer>
   </HeaderContainer>
 );
