@@ -1,9 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-
 const GlobalStyle = createGlobalStyle`
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Amatic SC', cursive;
   padding: 20px 60px;
+  height: 100vh;
+  overflow: hidden;
+  
 
   @media screen and (max-width: 800px){
       padding: 10px;

@@ -1,20 +1,21 @@
 import React from "react";
 
-import { Logo } from "../../assets/Logo.svg";
-
 import {
   HeaderContainer,
   LogoContainer,
+  Logo,
   OptionsLinkContainer,
   OptionsLink,
+  Name,
 } from "./header.styles";
 
 const Header = () => (
   <HeaderContainer>
     <LogoContainer>
-      <img src={Logo} alt="logo" />
-      <span>Carson Cobb</span>
+      <Logo src={require("../../assets/Logo.png")} alt="logo" />
+      <Name>Carson Cobb</Name>
     </LogoContainer>
+
     <OptionsLinkContainer>
       <OptionsLink to="/">Home</OptionsLink>
       <OptionsLink to="/Portfolio">Portfolio</OptionsLink>

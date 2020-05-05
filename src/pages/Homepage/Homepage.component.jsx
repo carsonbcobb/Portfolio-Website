@@ -1,11 +1,31 @@
 import React from "react";
-import { HomePageContainer } from "./Homepage.styles";
+
+import {
+  HomePageContainer,
+  NameContainer,
+  Title,
+  TitleContainer,
+  Name,
+  LogoContainer,
+  Logo,
+} from "./Homepage.styles";
+
+import VideoBackground from "../../components/video-background/videoBackground.component";
+
+const logoSource = require("../../assets/Logo.png");
 
 const HomePage = () => (
   <HomePageContainer>
-    <h1>Welcome to my Website</h1>
-    <span>Carson Cobb</span>
-    <span>Web developer</span>
+    <VideoBackground />
+    <NameContainer>
+      <Name>Carson Cobb</Name>
+    </NameContainer>
+    <LogoContainer>
+      <Logo src={logoSource} />
+    </LogoContainer>
+    <TitleContainer>
+      <Title>Web developer</Title>
+    </TitleContainer>
   </HomePageContainer>
 );
 
