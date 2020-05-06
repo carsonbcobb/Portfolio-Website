@@ -34,8 +34,20 @@ const PortfolioPage = () => (
         </WebsiteImageContainer>
         <br />
         <ButtonContainer>
-          <LiveButton>View Live</LiveButton>
-          <CodeButton>View Code</CodeButton>
+          <a
+            href="https://crown-clothing-company.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LiveButton>View Live</LiveButton>
+          </a>
+          <a
+            href="https://github.com/carsonbcobb/Crown-Clothing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CodeButton>View Code</CodeButton>
+          </a>
         </ButtonContainer>
       </Project>
       <Project>
@@ -46,8 +58,20 @@ const PortfolioPage = () => (
         </WebsiteImageContainer>
         <br />
         <ButtonContainer>
-          <LiveButton>View Live</LiveButton>
-          <CodeButton>View Code</CodeButton>
+          <LiveButton
+            onClick={() =>
+              alert("You are currently viewing this website live!")
+            }
+          >
+            View Live
+          </LiveButton>
+          <a
+            href="https://github.com/carsonbcobb/Portfolio-Website"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CodeButton>View Code</CodeButton>
+          </a>
         </ButtonContainer>
       </Project>
       <Project>

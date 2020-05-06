@@ -29,3 +29,8 @@ export const ContactItem = styled.li`
   font-size: 1.75em;
   padding: 15px;
 `;
+
+export const ContactLink = styled.a`
+  color: white;
+  cursor: pointer;
+`;

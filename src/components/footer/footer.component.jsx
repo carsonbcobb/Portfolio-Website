@@ -20,17 +20,17 @@ const Footer = () => (
       </span>
     </InfoContainer>
     <SocialLinkContainer>
-      <SocialLink>
+      <SocialLink href="https://github.com/carsonbcobb" target="_blank">
         <FaGithub />
         <br />
         Github
       </SocialLink>
-      <SocialLink>
+      <SocialLink href="https://www.linkedin.com/in/carsoncobb" target="_blank">
         <FaLinkedin />
         <br />
         LinkedIn
       </SocialLink>
-      <SocialLink>
+      <SocialLink href="mailto: carson@carson-cobb.com">
         <AiTwotoneMail />
         <br />
         Email

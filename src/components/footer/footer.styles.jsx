@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
   height: 10vh;
@@ -26,7 +25,7 @@ export const InfoContainer = styled.div`
   font-size: 2em;
 `;
 
-export const SocialLink = styled(Link)`
+export const SocialLink = styled.a`
   font-size: 2em;
   padding: 15px 10px;
   cursor: pointer;

@@ -8,6 +8,7 @@ import {
   ContactInfo,
   ContactHeader,
   ContactItem,
+  ContactLink,
 } from "./Contact.styles";
 
 import VideoBackgroundContact from "../../components/video-background/video-background-contact.component";
@@ -22,17 +23,26 @@ const ContactPage = () => (
     <ContactInfoContainer>
       <ContactInfo>
         <ContactItem>
-          <AiTwotoneMail />
-          Email: <br /> carson-cobb@carson-cobb.com
+          <ContactLink href="mailto: carson@carson-cobb.com">
+            <AiTwotoneMail />
+            Email: <br /> carson@carson-cobb.com
+          </ContactLink>
         </ContactItem>
         <ContactItem>
-          <FaGithub />
-          Github:
-          <br /> Carson-cobb
+          <ContactLink href="https://github.com/carsonbcobb" target="_blank">
+            <FaGithub />
+            Github:
+            <br /> carsonbcobb
+          </ContactLink>
         </ContactItem>
         <ContactItem>
-          <FaLinkedin /> LinkedIn:
-          <br /> webaddress
+          <ContactLink
+            href="https://www.linkedin.com/in/carsoncobb"
+            target="_blank"
+          >
+            <FaLinkedin /> LinkedIn:
+            <br /> carsoncobb
+          </ContactLink>
         </ContactItem>
       </ContactInfo>
     </ContactInfoContainer>

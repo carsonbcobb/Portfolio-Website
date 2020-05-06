@@ -11,7 +11,7 @@ import {
 
 const Header = () => (
   <HeaderContainer>
-    <LogoContainer>
+    <LogoContainer to="/">
       <Logo src={require("../../assets/Logo.png")} alt="logo" />
       <Name>Carson Cobb</Name>
     </LogoContainer>
