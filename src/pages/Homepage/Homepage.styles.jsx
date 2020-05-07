@@ -22,6 +22,9 @@ export const NameContainer = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 800px) {
+    transform: translateY(-40%);
+  }
 `;
 
 export const Name = styled.h1`
@@ -35,12 +38,21 @@ export const Name = styled.h1`
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (max-width: 800px) {
+    font-size: 4em;
+    color: black;
+  }
 `;
 
 export const TitleContainer = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 800px) {
+    margin-bottom: 10%;
+    transform: translateY(-80%);
+  }
 `;
 
 export const Title = styled.span`
@@ -50,15 +62,26 @@ export const Title = styled.span`
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
   opacity: 0;
+  @media (max-width: 800px) {
+    font-size: 2em;
+    color: white;
+    transform: translateY(-100%);
+  }
 `;
 
 export const LogoContainer = styled.div`
   display: flex;
-  height: 40%;
+  height: auto;
   width: 40%;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    visibility: hidden;
+    padding: 10%;
+  }
 `;
 
 export const Logo = styled.img`
@@ -68,6 +91,9 @@ export const Logo = styled.img`
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
   opacity: 0;
-  height: 80%;
+  height: auto;
   width: 20%;
+  @media (max-width: 800px) {
+    width: 5%;
+  }
 `;

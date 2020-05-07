@@ -14,6 +14,9 @@ export const SocialLinkContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -23,6 +26,10 @@ export const InfoContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   font-size: 2em;
+  @media (max-width: 800px) {
+    font-size: 1em;
+    padding: 5%;
+  }
 `;
 
 export const SocialLink = styled.a`
@@ -35,6 +42,10 @@ export const SocialLink = styled.a`
     transform: translateY(-15%);
     color: #3574b2;
   }
+
+  @media (max-width: 800px) {
+    font-size: 1.2em;
+  }
 `;
 
 export const Logo = styled.img`
@@ -42,4 +53,9 @@ export const Logo = styled.img`
   width: 4%;
   padding: 5px;
   margin: 5px;
+  @media (max-width: 800px) {
+    padding: none;
+    margin: none;
+    width: 35%;
+  }
 `;
