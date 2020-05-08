@@ -1,30 +1,19 @@
 import React from "react";
 
-import { RiMenu5Line } from "react-icons/ri";
+import { HeaderContainer, LogoContainer, Logo, Name } from "./header.styles";
 
-import {
-  HeaderContainer,
-  LogoContainer,
-  Logo,
-  OptionsLinkContainer,
-  OptionsLink,
-  Name,
-} from "./header.styles";
+import HeaderBurger from "./headerBurger/headerBurger.component";
 
-const Header = () => (
-  <HeaderContainer>
-    <LogoContainer to="/">
-      <Logo src={require("../../assets/Logo.png")} alt="logo" />
-      <Name>Carson Cobb</Name>
-    </LogoContainer>
-
-    <OptionsLinkContainer>
-      <OptionsLink to="/">Home</OptionsLink>
-      <OptionsLink to="/Portfolio">Portfolio</OptionsLink>
-      <OptionsLink to="/Contact">Contact</OptionsLink>
-      <OptionsLink to="/AboutMe">About Me</OptionsLink>
-    </OptionsLinkContainer>
-  </HeaderContainer>
-);
+function Header() {
+  return (
+    <HeaderContainer>
+      <LogoContainer to="/">
+        <Logo src={require("../../assets/Logo.png")} alt="logo" />
+        <Name>Carson Cobb</Name>
+      </LogoContainer>
+      <HeaderBurger />
+    </HeaderContainer>
+  );
+}
 
 export default Header;
