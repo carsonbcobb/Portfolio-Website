@@ -9,7 +9,7 @@ export const OptionsLinkContainer = styled.div`
   justify-content: flex-end;
   @media (max-width: 850px) {
     flex-flow: column nowrap;
-    background-color: #486982;
+    background-color: #ff7878;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
