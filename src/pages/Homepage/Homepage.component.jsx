@@ -10,13 +10,18 @@ import {
   Logo,
 } from "./Homepage.styles";
 
-import VideoBackground from "../../components/video-background/videoBackground.component";
+import BackgroundVideo from "react-background-video-player";
 
 const logoSource = require("../../assets/Logo.png");
+const videoSource = require("../../assets/background-trim.mp4");
 
 const HomePage = () => (
   <HomePageContainer>
-    <VideoBackground />
+    <BackgroundVideo
+      loop={false}
+      src={videoSource}
+      style={{ zIndex: "-100" }}
+    />
     <NameContainer>
       <Name>Carson Cobb</Name>
     </NameContainer>

@@ -51,4 +51,8 @@ export const OptionsLink = styled(Link)`
     font-size: 3rem;
     padding-bottom: 10px;
   }
+  @media (min-height: 1024px) and (max-width: 768px) {
+    font-size: 5rem;
+    margin: 30px;
+  }
 `;

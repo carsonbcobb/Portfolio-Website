@@ -23,12 +23,24 @@ export const PortfolioPageContainer = styled.div`
 
 export const HeaderPortfolio = styled.div`
   margin-bottom: auto;
+  transform: translate(0%, 70%);
+  @media (max-width: 850px) {
+    transform: translateY(0%);
+  }
+  @media (max-width: 320px) {
+    transform: translateY(-15%);
+  }
 `;
 
 export const HeaderTitlePortfolio = styled.h1`
-  font-size: 3.5em;
+  font-size: 4.5em;
+  color: white;
   @media (max-width: 850px) {
     font-size: 2.25em;
+    color: black;
+  }
+  @media (min-height: 1366px) and (max-width: 1024px) {
+    transform: translateY(110%);
   }
 `;
 
@@ -51,7 +63,7 @@ export const ProjectContainer = styled.ul`
     grid-template-rows: 1fr 1fr;
   }
   @media (max-width: 320px) {
-    margin: 15px;
+    margin: 10px;
   }
   @media (min-height: 1360px) {
     height: auto;
@@ -74,7 +86,7 @@ export const Project = styled.li`
     font-size: 1.25em;
     border-radius: 0%;
     margin: 5%;
-    transform: translate(-10%, -5%);
+    transform: translateY(-5%);
   }
   @media (max-width: 750px) {
     font-size: 1em;

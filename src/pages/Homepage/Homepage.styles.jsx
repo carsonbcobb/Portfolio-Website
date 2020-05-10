@@ -23,7 +23,7 @@ export const NameContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 850px) {
-    transform: translateY(-40%);
+    transform: translateY(80%);
   }
 `;
 
@@ -41,7 +41,10 @@ export const Name = styled.h1`
 
   @media (max-width: 850px) {
     font-size: 4em;
-    color: black;
+  }
+  @media (min-height: 1024px) and (max-width: 768px) {
+    font-size: 5em;
+    transform: translateY(60%);
   }
 `;
 
@@ -51,7 +54,7 @@ export const TitleContainer = styled.div`
   margin-right: auto;
   @media (max-width: 850px) {
     margin-bottom: 10%;
-    transform: translateY(-80%);
+    transform: translateY(0%);
   }
 `;
 
@@ -65,7 +68,6 @@ export const Title = styled.span`
   @media (max-width: 850px) {
     font-size: 2em;
     color: white;
-    transform: translateY(-100%);
   }
 `;
 
@@ -79,8 +81,16 @@ export const LogoContainer = styled.div`
 
   @media (max-width: 850px) {
     width: 100%;
-    visibility: hidden;
-    padding: 10%;
+    padding: 15%;
+    @media (max-width: 800px) {
+      transform: translateY(10%);
+    }
+  }
+  @media (min-height: 1024px) and (max-width: 768px) {
+    width: 90%;
+  }
+  @media (min-height: 1366px) and (max-width: 1024px) {
+    width: 100%;
   }
 `;
 
@@ -94,6 +104,9 @@ export const Logo = styled.img`
   height: auto;
   width: 20%;
   @media (max-width: 850px) {
-    width: 5%;
+    width: 45%;
+  }
+  @media (min-height: 1366px) and (max-width: 1024px) {
+    width: 25%;
   }
 `;

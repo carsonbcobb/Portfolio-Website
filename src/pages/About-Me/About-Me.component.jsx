@@ -8,11 +8,17 @@ import {
   BodyAbout,
 } from "./About-Me.styles";
 
-import VideoBackgroundAbout from "../../components/video-background/video-background-about.component";
+import BackgroundVideo from "react-background-video-player";
+
+const videoSource = require("../../assets/video-background-about.mp4");
 
 const AboutMePage = () => (
   <AboutMeContainer>
-    <VideoBackgroundAbout />
+    <BackgroundVideo
+      loop={false}
+      src={videoSource}
+      style={{ zIndex: "-100" }}
+    />{" "}
     <HeaderAbout>
       <HeaderTitle>About Me</HeaderTitle>
     </HeaderAbout>

@@ -9,14 +9,19 @@ import {
   ContactHeader,
   ContactItem,
   ContactLink,
-  ContactLink2,
 } from "./Contact.styles";
 
-import VideoBackgroundContact from "../../components/video-background/video-background-contact.component";
+import BackgroundVideo from "react-background-video-player";
+
+const videoSource = require("../../assets/video-background-contact.mp4");
 
 const ContactPage = () => (
   <ContactPageContainer>
-    <VideoBackgroundContact />
+    <BackgroundVideo
+      loop={false}
+      src={videoSource}
+      style={{ zIndex: "-100" }}
+    />
     <ContactHeader>
       <h1>Contact Me!</h1>
       <span></span>
@@ -24,10 +29,10 @@ const ContactPage = () => (
     <ContactInfoContainer>
       <ContactInfo>
         <ContactItem>
-          <ContactLink2 href="mailto: carson@carson-cobb.com">
+          <ContactLink href="mailto: carson@carson-cobb.com">
             <AiTwotoneMail />
             Email: <br /> carson@carson-cobb.com
-          </ContactLink2>
+          </ContactLink>
         </ContactItem>
         <ContactItem>
           <ContactLink href="https://github.com/carsonbcobb" target="_blank">
@@ -37,13 +42,13 @@ const ContactPage = () => (
           </ContactLink>
         </ContactItem>
         <ContactItem>
-          <ContactLink2
+          <ContactLink
             href="https://www.linkedin.com/in/carsoncobb"
             target="_blank"
           >
             <FaLinkedin /> LinkedIn:
             <br /> carsoncobb
-          </ContactLink2>
+          </ContactLink>
         </ContactItem>
       </ContactInfo>
     </ContactInfoContainer>

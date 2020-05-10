@@ -12,14 +12,19 @@ import {
   WebsiteImageContainer,
   WebsiteImage,
 } from "./Portfolio.styles";
-import VideoBackgroundPortfolio from "../../components/video-background/video-background-portfolio.component";
+import BackgroundVideo from "react-background-video-player";
 
+const videoSource = require("../../assets/video-background-contact.mp4");
 const crownClothing = require("../../assets/portfolio/crown-clothing.png");
 const carsonWebsite = require("../../assets/portfolio/carson-cobb-website.png");
 
 const PortfolioPage = () => (
   <PortfolioPageContainer>
-    <VideoBackgroundPortfolio />
+    <BackgroundVideo
+      loop={false}
+      src={videoSource}
+      style={{ zIndex: "-100" }}
+    />
     <HeaderPortfolio>
       <HeaderTitlePortfolio>
         Take a look at some of my work!
