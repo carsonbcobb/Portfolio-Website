@@ -16,6 +16,7 @@ import BackgroundVideo from "react-background-video-player";
 
 const crownClothing = require("../../assets/portfolio/crown-clothing.png");
 const carsonWebsite = require("../../assets/portfolio/carson-cobb-website.png");
+const choirWebsite = require("../../assets/portfolio/choir-screenshot.jpg");
 const backgroundPortfolio = require("../../assets/background-projects.mp4");
 const PortfolioPage = () => (
 	<PortfolioPageContainer>
@@ -85,12 +86,18 @@ const PortfolioPage = () => (
 				Clovis Community Choir
 				<br />
 				<WebsiteImageContainer>
-					<WebsiteImage />
+					<WebsiteImage src={choirWebsite} />
 				</WebsiteImageContainer>
 				<br />
 				<ButtonContainer>
 					<LiveButton>View Live</LiveButton>
-					<CodeButton>View Code</CodeButton>
+					<a
+						href="https://github.com/carsonbcobb/Clovis-Community-Choir"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<CodeButton>View Code</CodeButton>
+					</a>
 				</ButtonContainer>
 			</Project>
 		</ProjectContainer>
