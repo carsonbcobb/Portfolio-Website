@@ -13,11 +13,13 @@ import {
 
 import BackgroundVideo from "react-background-video-player";
 
+const backgroundContact = require("../../assets/background-contact.mp4");
+
 const ContactPage = () => (
 	<ContactPageContainer>
 		<BackgroundVideo
 			loop={false}
-			src={"https://i.imgur.com/wiktvpe.mp4"}
+			src={backgroundContact}
 			style={{ zIndex: "-100" }}
 		/>
 		<ContactHeader>

@@ -16,12 +16,12 @@ import BackgroundVideo from "react-background-video-player";
 
 const crownClothing = require("../../assets/portfolio/crown-clothing.png");
 const carsonWebsite = require("../../assets/portfolio/carson-cobb-website.png");
-
+const backgroundPortfolio = require("../../assets/background-projects.mp4");
 const PortfolioPage = () => (
 	<PortfolioPageContainer>
 		<BackgroundVideo
 			loop={false}
-			src={"https://i.imgur.com/0827KcP.mp4"}
+			src={backgroundPortfolio}
 			style={{ zIndex: "-100" }}
 		/>
 		<HeaderPortfolio>
@@ -31,6 +31,7 @@ const PortfolioPage = () => (
 		</HeaderPortfolio>
 		<ProjectContainer>
 			<Project>
+				<br />
 				Crown Clothing
 				<br />
 				<WebsiteImageContainer>
@@ -55,6 +56,7 @@ const PortfolioPage = () => (
 				</ButtonContainer>
 			</Project>
 			<Project>
+				<br />
 				Portfolio Website
 				<br />
 				<WebsiteImageContainer>
@@ -79,6 +81,7 @@ const PortfolioPage = () => (
 				</ButtonContainer>
 			</Project>
 			<Project>
+				<br />
 				Clovis Community Choir
 				<br />
 				<WebsiteImageContainer>

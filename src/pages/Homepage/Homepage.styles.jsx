@@ -23,7 +23,10 @@ export const NameContainer = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	@media (max-width: 414px) and (max-height: 896px) {
-		transform: translateY(80%);
+		transform: translateY(100%);
+	}
+	@media (max-width: 768px) and (max-height: 1024px) {
+		transform: translateY(-90%);
 	}
 `;
 
@@ -41,6 +44,7 @@ export const Name = styled.h1`
 
 	@media (max-width: 414px) and (max-height: 896px) {
 		font-size: 4em;
+		transform: translateY(180%);
 	}
 	@media (min-height: 1024px) and (max-width: 768px) {
 		font-size: 5em;

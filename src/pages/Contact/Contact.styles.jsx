@@ -13,44 +13,52 @@ export const ContactHeader = styled.div`
 	margin-bottom: auto;
 	transform: translateY(-65%);
 
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media (max-width: 414px) and (min-height: 896px) {
 		font-size: 2em;
 		transform: translateY(-40%);
 	}
-	@media (max-width: 375px) and (max-height: 812px) {
+	@media (max-width: 375px) and (min-height: 812px) {
 		transform: translateY(-35%);
 	}
-	@media (max-width: 375px) and (max-height: 667px) {
+	@media (max-width: 414px) and (min-height: 736px) {
 		font-size: 1.8rem;
 		transform: translateY(-40%);
 	}
-	@media (max-width: 320px) and (max-height: 568px) {
+	@media (max-width: 375px) and (min-height: 667px) {
+		font-size: 1.8rem;
+		transform: translateY(-40%);
+	}
+	@media (max-width: 320px) and (min-height: 568px) {
 		font-size: 1.4rem;
 		transform: translateY(-45%);
 	}
-	@media (min-height: 1024px) {
-		font-size: 3em;
+	@media (max-width: 768px) and (min-height: 1024px) {
+		transform: translateY(-30%);
 	}
-	@media (min-height: 1366px) and (max-width: 1024px) {
+	@media (max-width: 1024px) and (min-height: 1366px) {
 		transform: translateY(-30%);
 	}
 `;
 
 export const ContactInfoContainer = styled.div`
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	transform: translateY(-40%);
 
-	@media (max-width: 375px) and (max-height: 812px) {
-		font-size: 2rem;
+	@media (max-width: 375px) and (min-height: 812px) {
 		transform: translateY(-15%);
 	}
-	@media (max-width: 375px) and (max-height: 667px) {
-		font-size: 1.5rem;
+	@media (max-width: 375px) and (min-height: 667px) {
 		transform: translateY(-20%);
 	}
-	@media (max-width: 320px) and (max-height: 568px) {
-		font-size: 1.3rem;
-		transform: translateY(-20%);
+	@media (max-width: 320px) and (min-height: 568px) {
+		font-size: 1.8rem;
+		transform: translateY(0%);
+	}
+	@media (max-width: 768px) and (min-height: 1024px) {
+		transform: translateY(-30%);
+	}
+	@media (max-width: 1024px) and (min-height: 1366px) {
+		font-size: 2rem;
 	}
 `;
 
@@ -60,40 +68,44 @@ export const ContactInfo = styled.ul`
 	color: white;
 	list-style: none;
 
-	@media (max-width: 414px) and (max-height: 896px) {
-		transform: translateY(15%);
+	@media (max-width: 414px) and (min-height: 896px) {
+		transform: translateY(25%);
 	}
-	@media (max-width: 375px) and (max-height: 812px) {
-		transform: translateY(-15%);
+	@media (max-width: 375px) and (min-height: 812px) {
+		transform: translateY(-5%);
+	}
+	@media (max-width: 320px) and (min-height: 568px) {
+		transform: translateY(-35%);
 	}
 `;
 
 export const ContactItem = styled.li`
 	font-size: 1.75em;
 	padding: 5px;
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media (max-width: 414px) and (min-height: 896px) {
 		font-size: 1.4em;
 		padding: 10px;
 		margin: 15px;
 		transform: translateY(35%);
 	}
-	@media (max-width: 414px) and (max-height: 736px) {
+	@media (max-width: 414px) and (min-height: 736px) {
 		font-size: 1.8rem;
 		transform: translateY(-5%);
 	}
-	@media (max-width: 320px) and (max-height: 568px) {
+	@media (max-width: 320px) and (min-height: 568px) {
 		font-size: 0.8em;
 		padding: 3px;
 		margin: 3px;
 		transform: translateX(-5%);
 	}
-	@media (max-width: 375px) and (max-height: 812px) {
-		font-size: 1em;
+	@media (max-width: 375px) and (min-height: 812px) {
+		font-size: 1.5rem;
+	}
+	@media (max-width: 375px) and (min-height: 667px) {
+		transform: translateY(-25%);
+		font-size: 1.5rem;
 		padding: 10px;
 		margin: 10px;
-	}
-	@media (max-width: 375px) and (max-height: 667px) {
-		transform: translateY(35%);
 	}
 `;
 

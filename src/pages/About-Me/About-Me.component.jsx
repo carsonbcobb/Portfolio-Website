@@ -10,11 +10,13 @@ import {
 
 import BackgroundVideo from "react-background-video-player";
 
+const backgroundAbout = require("../../assets/background-about.mp4");
+
 const AboutMePage = () => (
 	<AboutMeContainer>
 		<BackgroundVideo
 			loop={false}
-			src={"https://i.imgur.com/T6Kv6Ij.mp4"}
+			src={backgroundAbout}
 			style={{ zIndex: "-100" }}
 		/>{" "}
 		<HeaderAbout>

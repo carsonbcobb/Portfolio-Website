@@ -9,6 +9,9 @@ export const FooterContainer = styled.div`
 	@media (max-width: 320px) and (max-height: 568px) {
 		margin-top: 20px;
 	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		margin-top: 20px;
+	}
 `;
 
 export const SocialLinkContainer = styled.div`

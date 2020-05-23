@@ -13,12 +13,13 @@ import {
 import BackgroundVideo from "react-background-video-player";
 
 const logoSource = require("../../assets/Logo.png");
+const homeBackground = require("../../assets/background-home.mp4");
 
 const HomePage = () => (
 	<HomePageContainer>
 		<BackgroundVideo
 			loop={false}
-			src={"https://i.imgur.com/KSE1CWw.mp4"}
+			src={homeBackground}
 			style={{ zIndex: "-100" }}
 		/>
 		<NameContainer>
