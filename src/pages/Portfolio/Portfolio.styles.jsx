@@ -22,10 +22,10 @@ export const HeaderPortfolio = styled.div`
 	margin-bottom: auto;
 	transform: translateY(-20%);
 
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		transform: translateY(-20%);
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		transform: translateY(-15%);
 	}
 `;
@@ -40,23 +40,23 @@ export const HeaderTitlePortfolio = styled.h1`
 	animation-fill-mode: forwards;
 	opacity: 0;
 
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		font-size: 2.25em;
 		color: white;
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		font-size: 1.8rem;
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		font-size: 1.6rem;
 	}
-	@media (max-width: 375px) and (min-height: 812px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 		font-size: 1.8rem;
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		font-size: 1.6rem;
 	}
-	@media (min-height: 1366px) and (min-width: 1024px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		transform: translateY(110%);
 	}
 `;
@@ -74,39 +74,37 @@ export const ProjectContainer = styled.ul`
 	animation-fill-mode: forwards;
 	transform: translateY(-30%);
 
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		transform: translate(-2.5%, -10%);
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
 
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		transform: translate(-5%, -15%);
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		transform: translate(-5%, -10%);
 	}
-	@media (max-width: 375px) and (min-height: 812px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		transform: translate(-5%, 0%);
 	}
-	@media (max-width: 1024px) and (min-height: 1366px) {
-		transform: translate(0%, 10%);
-	}
-	@media (max-width: 768px) and (min-height: 1024px) {
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		height: 70%;
 		transform: translate(0%, 0%);
 	}
-	@media (max-width: 1024px) and (min-height: 1366px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		height: 50%;
 		transform: translate(0%, -20%);
 	}
@@ -121,19 +119,19 @@ export const Project = styled.li`
 	border-radius: 3.33%;
 	background: rgba(255, 255, 255, 0.5);
 
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		font-size: 1rem;
 		border-radius: 3.33%;
 		margin: 5%;
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		font-size: 0.9rem;
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		margin: 1%;
 		font-size: 0.7rem;
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		font-size: 0.6rem;
 	}
 `;

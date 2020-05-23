@@ -22,10 +22,10 @@ export const NameContainer = styled.div`
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		transform: translateY(100%);
 	}
-	@media (max-width: 768px) and (max-height: 1024px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		transform: translateY(-90%);
 	}
 `;
@@ -42,11 +42,11 @@ export const Name = styled.h1`
 	margin-top: 0;
 	margin-bottom: 0;
 
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		font-size: 4em;
 		transform: translateY(180%);
 	}
-	@media (min-height: 1024px) and (max-width: 768px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		font-size: 5em;
 		transform: translateY(60%);
 	}
@@ -56,7 +56,7 @@ export const TitleContainer = styled.div`
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		margin-bottom: 10%;
 		transform: translateY(0%);
 	}
@@ -69,7 +69,7 @@ export const Title = styled.span`
 	animation-delay: 2.5s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		font-size: 2em;
 		color: white;
 	}
@@ -83,17 +83,14 @@ export const LogoContainer = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		width: 100%;
 		padding: 15%;
-		@media (max-width: 800px) {
-			transform: translateY(10%);
-		}
 	}
-	@media (min-height: 1024px) and (max-width: 768px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		width: 90%;
 	}
-	@media (min-height: 1366px) and (max-width: 1024px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		width: 100%;
 	}
 `;
@@ -107,10 +104,10 @@ export const Logo = styled.img`
 	opacity: 0;
 	height: auto;
 	width: 20%;
-	@media (max-width: 414px) and (max-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		width: 45%;
 	}
-	@media (min-height: 1366px) and (max-width: 1024px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		width: 25%;
 	}
 `;

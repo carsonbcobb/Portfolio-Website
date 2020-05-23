@@ -10,26 +10,26 @@ export const AboutMeContainer = styled.div`
 export const HeaderAbout = styled.div`
 	margin-bottom: auto;
 	transform: translateY(-40%);
-	@media (min-height: 1024px) and (max-width: 768px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		transform: translateY(0%);
 	}
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		transform: translateY(0%);
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		transform: translateY(0%);
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		transform: translateY(-10%);
 	}
-	@media (max-width: 375px) and (min-height: 812px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 		transform: translateY(10%);
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		transform: translateY(10%);
 	}
 
-	@media (max-width: 1024px) and (min-height: 1366px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		transform: translateY(-10%);
 	}
 `;
@@ -37,27 +37,27 @@ export const HeaderAbout = styled.div`
 export const HeaderTitle = styled.h1`
 	font-size: 6em;
 	color: white;
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		font-size: 5em;
 		transform: translateY(80%);
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		font-size: 4rem;
 	}
-	@media (max-width: 375px) and (min-height: 812px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 		font-size: 4rem;
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		font-size: 4rem;
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		font-size: 4rem;
 	}
 
-	@media (min-height: 1024px) and (max-width: 768px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		font-size: 8em;
 	}
-	@media (max-width: 1024px) and (min-height: 1366px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		font-size: 8em;
 	}
 `;
@@ -69,35 +69,35 @@ export const BodyAbout = styled.div`
 	font-size: 1.5rem;
 	transform: translateY(-25%);
 
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		width: 95%;
 		font-size: 1.2rem;
 		transform: translateY(-15%);
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		font-size: 1rem;
 		width: 90%;
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		font-size: 1rem;
 		width: 90%;
 	}
-	@media (max-width: 375px) and (min-height: 812px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 		font-size: 1rem;
 		width: 90%;
 		transform: translateY(-25%);
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		font-size: 0.9rem;
 		width: 90%;
 		transform: translateY(-5%);
 	}
-	@media (max-width: 768px) and (min-height: 1024px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		font-size: 1.4rem;
 		width: 90%;
 		transform: translateY(-15%);
 	}
-	@media (max-width: 1024px) and (min-height: 1366px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		font-size: 1.2rem;
 		width: 90%;
 		transform: translateY(-5%);
@@ -108,22 +108,22 @@ export const Body = styled.p`
 	color: white;
 	transform: translateY(-15%);
 
-	@media (max-width: 414px) and (min-height: 896px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
 		transform: translateY(0%);
 	}
-	@media (max-width: 414px) and (min-height: 736px) {
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
 		transform: translateY(0%);
 	}
-	@media (max-width: 320px) and (min-height: 568px) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
 		transform: translateY(-10%);
 	}
-	@media (max-width: 375px) and (min-height: 667px) {
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
 		transform: translateY(10%);
 	}
-	@media (min-height: 1024px) and (max-width: 768px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 		font-size: 1.2em;
 	}
-	@media (min-height: 1366px) and (max-width: 1024px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
 		font-size: 2em;
 	}
 `;
