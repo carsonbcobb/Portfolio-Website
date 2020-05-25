@@ -44,6 +44,8 @@ export const SocialLink = styled.a`
 	padding: 15px 10px;
 	cursor: pointer;
 	transition: 1s ease;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 
 	&:hover {
 		transform: translateY(-15%);
@@ -60,6 +62,8 @@ export const Logo = styled.img`
 	width: 4%;
 	padding: 5px;
 	margin: 5px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 	@media (max-width: 414px) and (max-height: 896px) {
 		padding: none;
 		margin: none;

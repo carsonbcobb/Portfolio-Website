@@ -13,29 +13,29 @@ export const ContactHeader = styled.div`
 	margin-bottom: auto;
 	transform: translateY(-65%);
 
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 2em;
 		transform: translateY(-40%);
 	}
-	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-35%);
 	}
-	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+	@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 1.8rem;
 		transform: translateY(-40%);
 	}
-	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+	@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 1.8rem;
 		transform: translateY(-40%);
 	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 1.4rem;
 		transform: translateY(-45%);
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-30%);
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-30%);
 	}
 `;
@@ -43,21 +43,23 @@ export const ContactHeader = styled.div`
 export const ContactInfoContainer = styled.div`
 	font-size: 1.6rem;
 	transform: translateY(-40%);
+	-webkit-transform: translateY(-35%);
 
-	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-15%);
 	}
-	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+	@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-20%);
 	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-		font-size: 1.8rem;
-		transform: translateY(0%);
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+		font-size: 1.4rem;
+		transform: translateY(15%);
+		-webkit-transform: translateY(-10%);
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-30%);
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 2rem;
 	}
 `;
@@ -68,40 +70,43 @@ export const ContactInfo = styled.ul`
 	color: white;
 	list-style: none;
 
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(25%);
 	}
-	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+
+	@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-5%);
 	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-35%);
 	}
 `;
 
 export const ContactItem = styled.li`
-	font-size: 1.75em;
+	font-size: 1.75rem;
 	padding: 5px;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 1.4em;
 		padding: 10px;
 		margin: 15px;
 		transform: translateY(35%);
 	}
-	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+	@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 1.8rem;
 		transform: translateY(-5%);
 	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 0.8em;
 		padding: 3px;
 		margin: 3px;
 		transform: translateX(-5%);
 	}
-	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 1.5rem;
 	}
-	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+	@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-25%);
 		font-size: 1.5rem;
 		padding: 10px;
@@ -112,4 +117,6 @@ export const ContactItem = styled.li`
 export const ContactLink = styled.a`
 	color: white;
 	cursor: pointer;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 `;

@@ -22,16 +22,18 @@ export const NameContainer = styled.div`
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
-		transform: translateY(100%);
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+		transform: translateY(-100%);
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		transform: translateY(-90%);
 	}
 `;
 
 export const Name = styled.h1`
-	font-size: 7em;
+	font-size: 7rem;
 	font-weight: 500;
 	color: white;
 	animation: ${fadeIn} 4s;
@@ -41,12 +43,16 @@ export const Name = styled.h1`
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
-		font-size: 4em;
-		transform: translateY(180%);
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+		font-size: 4rem;
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+		font-size: 4rem;
+		-webkit-transform: translateY(55%);
+	}
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		font-size: 5em;
 		transform: translateY(60%);
 	}
@@ -56,9 +62,14 @@ export const TitleContainer = styled.div`
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		margin-bottom: 10%;
 		transform: translateY(0%);
+	}
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+		transform: translateY(50%);
 	}
 `;
 
@@ -69,8 +80,10 @@ export const Title = styled.span`
 	animation-delay: 2.5s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
-		font-size: 2em;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+		font-size: 2rem;
 		color: white;
 	}
 `;
@@ -82,15 +95,22 @@ export const LogoContainer = styled.div`
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-logical-width: 40%;
+	-webkit-logical-height: 30%;
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		width: 100%;
 		padding: 15%;
+		-webkit-logical-width: 100%;
+		-webkit-logical-height: 30%;
+		-webkit-padding-after: 0;
+		-webkit-padding-before: 0;
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		width: 90%;
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		width: 100%;
 	}
 `;
@@ -104,10 +124,12 @@ export const Logo = styled.img`
 	opacity: 0;
 	height: auto;
 	width: 20%;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		width: 45%;
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 		width: 25%;
 	}
 `;

@@ -15,11 +15,15 @@ export const LogoContainer = styled(Link)`
 	justify-content: flex-start;
 	width: 15%;
 	margin-left: 10px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 `;
 
 export const Logo = styled.img`
 	height: auto;
 	width: 15%;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 	@media (max-width: 414px) and (max-height: 896px) {
 		width: 50%;
 	}
@@ -32,6 +36,8 @@ export const Name = styled.span`
 	align-items: center;
 	justify-content: flex-start;
 	margin-left: 25px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 
 	@media (max-width: 414px) and (max-height: 896px) {
 		font-size: 1.5em;

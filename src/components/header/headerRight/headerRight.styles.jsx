@@ -29,6 +29,8 @@ export const OptionsLink = styled(Link)`
 	cursor: pointer;
 	color: black;
 	transition: 1s ease;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 
 	&:hover {
 		transform: translateY(-15%);

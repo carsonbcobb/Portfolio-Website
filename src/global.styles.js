@@ -4,7 +4,6 @@ body {
   font-family: 'Amatic SC', cursive;
   padding: 20px 60px;
   height: 100vh;
-  overflow: hidden;
   
 
   @media screen and (max-width: 800px){
@@ -15,6 +14,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  
 }
 
 * {
