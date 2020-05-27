@@ -24,12 +24,39 @@ export const NameContainer = styled.div`
 	margin-right: auto;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		transform: translateY(-100%);
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
+		transform: translateY(-50%);
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3){
+		transform: translateY(-20%);
+
+	}
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2){
+		transform: translateY(-25%);
+	}
+	@media only screen 
+and (max-width: 320px) 
+and (max-height: 568px) 
+and (-webkit-device-pixel-ratio: 2){
+		transform: translateY(-25%);
+	}
+		@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
 		transform: translateY(-90%);
 	}
+	
+	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2){
+		transform: translateY(-25%);
+	}
+	
 `;
 
 export const Name = styled.h1`
@@ -45,17 +72,33 @@ export const Name = styled.h1`
 	margin-bottom: 0;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		font-size: 4rem;
 	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3){
 		font-size: 4rem;
-		-webkit-transform: translateY(55%);
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2){
+		font-size: 4rem !important;
+	}
+	
+	
+		@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
 		font-size: 5em;
-		transform: translateY(60%);
+		transform: translateY(50%);
 	}
+
+	
+
 `;
 
 export const TitleContainer = styled.div`
@@ -64,13 +107,15 @@ export const TitleContainer = styled.div`
 	margin-right: auto;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		margin-bottom: 10%;
 		transform: translateY(0%);
 	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		transform: translateY(50%);
-	}
+	
+	
 `;
 
 export const Title = styled.span`
@@ -82,9 +127,37 @@ export const Title = styled.span`
 	opacity: 0;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		font-size: 2rem;
 		color: white;
+		transform: translateY(40%);
+	}
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3){
+		font-size: 2rem;
+		transform: translateY(40%);
+
+	}
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2){
+		font-size: 2rem !important;
+		transform: translateY(40%);
+	}
+	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 3rem !important;
+		transform: translateY(40%);
+
+	}
+	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 4rem;
+		transform: translateY(45%);
 	}
 `;
 
@@ -99,7 +172,10 @@ export const LogoContainer = styled.div`
 	-webkit-margin-after: 0em;
 	-webkit-logical-width: 40%;
 	-webkit-logical-height: 30%;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		width: 100%;
 		padding: 15%;
 		-webkit-logical-width: 100%;
@@ -107,11 +183,35 @@ export const LogoContainer = styled.div`
 		-webkit-padding-after: 0;
 		-webkit-padding-before: 0;
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		width: 90%;
-	}
-	@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3){
 		width: 100%;
+		padding: 15%;
+		-webkit-logical-width: 100%;
+		-webkit-logical-height: 30%;
+		-webkit-padding-after: 0;
+		-webkit-padding-before: 0;
+
+	}
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2){
+		width: 100%;
+		-webkit-logical-width: 100%;
+		-webkit-logical-height: 30%;
+		-webkit-padding-after: 0;
+		-webkit-padding-before: 0;
+	}
+	
+		@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
+		width: 50%;
+	}
+	
+	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
+		width: 50%;
 	}
 `;
 
@@ -126,10 +226,31 @@ export const Logo = styled.img`
 	width: 20%;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
-	@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		width: 45%;
 	}
-	@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		width: 25%;
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3){
+		width: 45%;
+	}
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2){
+		width: 30%;
+	}
+	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
+	
+	width: 35%;
+	
+	}
+	
+	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
+		width: 35%;
 	}
 `;

@@ -24,10 +24,16 @@ export const HeaderPortfolio = styled.div`
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
 
-	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		transform: translateY(-20%);
 	}
-	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+and (device-width: 320px) 
+and (device-height: 568px) 
+and (-webkit-device-pixel-ratio: 2) {
 		transform: translateY(-15%);
 	}
 `;
@@ -44,24 +50,38 @@ export const HeaderTitlePortfolio = styled.h1`
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
 
-	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		font-size: 2.25em;
 		color: white;
 	}
-	@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		font-size: 1.8rem;
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) {
+		font-size: 2rem;
 	}
-	@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
 		font-size: 1.6rem;
 	}
-	@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		font-size: 1.8rem;
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){		font-size: 1.8rem;
 	}
-	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+and (device-width: 320px) 
+and (device-height: 568px) 
+and (-webkit-device-pixel-ratio: 2) {
 		font-size: 1.6rem;
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		transform: translateY(110%);
+	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
+		transform: translateY(0%);
 	}
 `;
 
@@ -81,40 +101,55 @@ export const ProjectContainer = styled.ul`
 	-webkit-margin-after: 0em;
 	-webkit-transform: translateY(15%);
 
-	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+		transform: translate(-1%, -1%);
+
 	}
-	@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		transform: translate(-2.5%, -10%);
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
 
-	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		transform: translate(-5%, -15%);
+	@media only screen 
+and (max-width: 320px) 
+and (max-height: 568px) 
+and (-webkit-device-pixel-ratio: 2) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-	@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-		transform: translate(-5%, -10%);
+		transform: translate(-5%, 0%);
 	}
-	@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){		
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		transform: translate(-5%, 0%);
 	}
 
-	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
 		height: 70%;
 		transform: translate(0%, 0%);
 		-webkit-transform: translate(0%, 0%);
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
 		height: 50%;
-		transform: translate(0%, -20%);
+		transform: translate(0%, 20%);
 	}
 `;
 
@@ -129,20 +164,40 @@ export const Project = styled.li`
 	text-align: center;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
-	@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-		font-size: 1rem;
-		border-radius: 3.33%;
-		margin: 5%;
-	}
-	@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
 		font-size: 0.9rem;
+		border-radius: 3.33%;
+		margin: 0;
 	}
-	@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+    and (max-width : 414px) 
+    and (max-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) {
+		font-size: 0.8rem;
+		border-radius: 3.33%;
+		margin: 0;
+		transform: translate(-10%, -5%);
+
+	}
+	@media only screen 
+    and (max-width : 375px) 
+    and (max-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
 		margin: 1%;
 		font-size: 0.7rem;
 	}
-	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	@media only screen 
+and (max-width: 320px) 
+and (max-height: 568px) 
+and (-webkit-device-pixel-ratio: 2){
 		font-size: 0.6rem;
+		border-radius: 3.33%;
+		margin: 0;
+		transform: translate(-5%, -5%);
+
 	}
 `;
 
