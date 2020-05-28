@@ -56,4 +56,10 @@ export const OptionsLink = styled(Link)`
 	@media (max-width: 320px) and (max-height: 568px) {
 		font-size: 3rem;
 	}
+	@media only screen and (max-height: 600px) and (min-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 3rem;
+	}
 `;

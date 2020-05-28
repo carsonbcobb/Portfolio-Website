@@ -83,6 +83,9 @@ and (-webkit-device-pixel-ratio: 2) {
 	@media only screen and (max-height: 1024px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
 		transform: translateY(0%);
 	}
+	@media only screen and (max-height: 600px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 3rem;
+	}
 `;
 
 export const ProjectContainer = styled.ul`
@@ -198,6 +201,9 @@ and (-webkit-device-pixel-ratio: 2){
 		margin: 0;
 		transform: translate(-5%, -5%);
 
+	}
+	@media only screen and (max-height: 600px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1rem;
 	}
 `;
 

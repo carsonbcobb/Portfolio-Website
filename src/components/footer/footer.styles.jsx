@@ -38,6 +38,12 @@ export const InfoContainer = styled.div`
 		padding: 5%;
 		transform: translateX(-10%);
 	}
+	@media only screen and (max-height: 600px) and (min-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 3rem;
+	}
 `;
 
 export const SocialLink = styled.a`
@@ -56,6 +62,12 @@ export const SocialLink = styled.a`
 	@media (max-width: 414px) and (max-height: 896px) {
 		font-size: 1.2em;
 	}
+	@media only screen and (max-height: 600px) and (min-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 3rem;
+	}
 `;
 
 export const Logo = styled.img`
@@ -70,5 +82,11 @@ export const Logo = styled.img`
 		margin: none;
 		width: 0%;
 		visibility: hidden;
+	}
+	@media only screen and (max-height: 600px) and (min-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		width: 8%;
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		width: 7%;
 	}
 `;

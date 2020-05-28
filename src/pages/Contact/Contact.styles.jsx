@@ -60,6 +60,10 @@ export const ContactHeader = styled.div`
 		font-size: 3rem;
 		transform: translateY(-35%);
 	}
+	@media only screen and (max-height: 600px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
+		transform: translateY(-40%);
+	}
 	
 
 `;
@@ -98,6 +102,7 @@ and (-webkit-device-pixel-ratio: 2){
 	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2){
 		transform: translateY(-30%);
 	}
+	
 	
 	
 
@@ -169,6 +174,10 @@ export const ContactItem = styled.li`
 	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
 		font-size: 3rem;
 		transform: translateY(20%);
+	}
+	@media only screen and (max-height: 600px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
+		transform: translateY(35%);
 	}
 `;
 

@@ -86,6 +86,7 @@ and (-webkit-device-pixel-ratio: 2) {
 	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
 		font-size: 8em;
 	}
+	
 	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
 		font-size: 9rem;
 	}
@@ -141,14 +142,21 @@ and (-webkit-device-pixel-ratio: 2){
 	}
 	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
 		font-size: 1rem;
-		width: 50%;
+		width: 40%;
 		transform: translateY(15%);
 	}
 
-	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+	@media only screen and (max-height: 768px) and (min-width: 1366px) and (-webkit-device-pixel-ratio: 2){
+		width: 40%;
+	}
+
+	@media (min-width: 1920px) and (max-height: 1080px) and (-webkit-device-pixel-ratio: 2){
 		font-size: 1.8rem;
 		transform: translateY(25%);
 	}
+	
+
+
 	
 
 `;
@@ -186,6 +194,10 @@ and (-webkit-device-pixel-ratio: 2) {
 	}
 	@media only screen and (max-height: 768px) and (min-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
 		font-size: 1.2rem;
+	}
+	@media only screen and (max-height: 600px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 0.9rem;
+		
 	}
 
 `;
